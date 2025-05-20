@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_ground",
+  "name": "obj_test",
   "spriteId": {
-    "name": "spr_ground",
-    "path": "sprites/spr_ground/spr_ground.yy",
+    "name": "spr_splashscreen",
+    "path": "sprites/spr_splashscreen/spr_splashscreen.yy",
   },
   "solid": false,
   "visible": true,

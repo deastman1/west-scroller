@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_algorithm",
-  "spriteId": null,
+  "name": "obj_gunhole5",
+  "spriteId": {
+    "name": "spr_gunhole",
+    "path": "sprites/spr_gunhole/spr_gunhole.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -22,7 +25,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
