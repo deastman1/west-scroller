@@ -25,6 +25,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":1,},
     {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},"order":5,},
+    {"id":{"name":"obj_ammovar","path":"objects/obj_ammovar/obj_ammovar.yy",},"order":16,},
     {"id":{"name":"obj_splashscreen","path":"objects/obj_splashscreen/obj_splashscreen.yy",},"order":4,},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},"order":2,},
     {"id":{"name":"obj_gunreloading","path":"objects/obj_gunreloading/obj_gunreloading.yy",},"order":7,},
