@@ -7,7 +7,6 @@ move_x = 0;
 move_y = 0;
 lives = 3;
 global.ammo = 6
-global.getammo = 0
 global.dragging = false
 
 // $$$$$$$$$$$$ STATE VARIABLES $$$$$$$$$$$$

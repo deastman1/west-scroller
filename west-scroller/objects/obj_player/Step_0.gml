@@ -27,3 +27,6 @@ move_and_collide(move_x, move_y, ground_object);
 if (x < -20 || x > room_width + 20 || y > room_height + 20 || y < -100) {
 	room_restart();
 }
+
+if (global.ammo > 6)
+	global.ammo = 6

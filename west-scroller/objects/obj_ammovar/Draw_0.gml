@@ -1,1 +1,0 @@
-draw_text(100, 200, "Score: " + string(global.ammo));
