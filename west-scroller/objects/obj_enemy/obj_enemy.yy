@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_test",
+  "name": "obj_enemy",
   "spriteId": {
-    "name": "spr_splashscreen",
-    "path": "sprites/spr_splashscreen/spr_splashscreen.yy",
+    "name": "spr_enemy1",
+    "path": "sprites/spr_enemy1/spr_enemy1.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,7 +24,10 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

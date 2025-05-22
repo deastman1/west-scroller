@@ -1,19 +1,22 @@
-// Optional: follow the player
-x = obj_player.x;
+spawn_timer += 1;
 
-// Only spawn when the player is moving
-if (abs(obj_player.hspeed) > 0) {
-    cooldown_timer--;
+if (spawn_timer >= spawn_interval) {
+	if (random(35) < 0.2) {
+	    spawn_timer = 0;
 
-    if (cooldown_timer <= 0) {
-        cooldown_timer = spawn_cooldown;
+	    // Get the active camera for viewport 0
+	    var cam = view_camera[0];
 
-        if (random(1) < spawn_chance) {
-            // Random vertical offset and direction
-            var spawn_y = obj_player.y;
-            var spawn_x = obj_player.x + choose(-100, 100); // Left or right of player
+	    // Get right edge X coordinate of the viewport
+	    var right_edge_x = camera_get_view_x(cam) + camera_get_view_width(cam);
 
-            instance_create_layer(spawn_x, spawn_y, "player", obj_test);
-        }
-    }
+	    // Get random Y within the viewport height
+	    var spawn_y = 440;
+		//repeat (random(2) < 0.2) {
+		instance_create_layer(right_edge_x, spawn_y, "ground", obj_enemy);
+			//x += 20
+		//}
+	}
 }
+
+test = round(max(score, room_width - x));
