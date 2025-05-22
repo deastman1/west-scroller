@@ -1,11 +1,11 @@
 // $$$$$$$$$$$$$$ INPUT $$$$$$$$$$$$$$
-move_x = keyboard_check(vk_right) - keyboard_check(vk_left);
-if (! keyboard_check(vk_right))
-	if (! keyboard_check(vk_left))
+move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+if (! keyboard_check(ord("D")))
+	if (! keyboard_check(ord("A")))
 		sprite_index = spr_player
 move_x *= move_speed
-var jump_pressed = keyboard_check_pressed(vk_up); //var makes it a local variable
-
+global.angle = point_direction(x, y, mouse_x, mouse_y)
+var jump_pressed = keyboard_check_pressed(vk_space); //var makes it a local variable
 // $$$$$$$$$$$$$$ COLLISION CHECKS $$$$$$$$$$$$$$
 //check col with ground
 is_grounded = place_meeting(x, y+2, obj_ground);
@@ -30,3 +30,11 @@ if (x < -20 || x > room_width + 20 || y > room_height + 20 || y < -100) {
 
 if (global.ammo > 6)
 	global.ammo = 6
+	
+var view_w = camera_get_view_width(view_camera[0]);
+var view_h = camera_get_view_height(view_camera[0]);
+
+var cam_x = round(x - view_w / 2);
+var cam_y = round(y - view_h / 2);
+
+camera_set_view_pos(view_camera[0], cam_x, cam_y);

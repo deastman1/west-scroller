@@ -1,6 +1,6 @@
-var center_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2 - 500;
+var center_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2 - 400;
 var center_y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) / 2;
-if (global.dragging = false)
+if (global.dragging = 0)
 	x = center_x;
 	y = center_y;
 

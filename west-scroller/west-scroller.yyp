@@ -3,10 +3,12 @@
   "resourceVersion": "1.6",
   "name": "west-scroller",
   "resources": [
+    {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_ammo","path":"sprites/spr_ammo/spr_ammo.yy",},"order":5,},
     {"id":{"name":"obj_gunhole4","path":"objects/obj_gunhole4/obj_gunhole4.yy",},"order":18,},
     {"id":{"name":"spr_gunreloading","path":"sprites/spr_gunreloading/spr_gunreloading.yy",},"order":6,},
+    {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},"order":21,},
     {"id":{"name":"obj_spawning","path":"objects/obj_spawning/obj_spawning.yy",},"order":6,},
     {"id":{"name":"obj_ammo","path":"objects/obj_ammo/obj_ammo.yy",},"order":14,},
     {"id":{"name":"obj_gunhole5","path":"objects/obj_gunhole5/obj_gunhole5.yy",},"order":19,},
