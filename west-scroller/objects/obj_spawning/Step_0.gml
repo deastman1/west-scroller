@@ -1,7 +1,7 @@
 spawn_timer += 1;
 
 if (spawn_timer >= spawn_interval) {
-	if (random(35) < 0.2) {
+	if (random(1) < 0.2) {
 	    spawn_timer = 0;
 
 	    // Get the active camera for viewport 0
@@ -19,4 +19,4 @@ if (spawn_timer >= spawn_interval) {
 	}
 }
 
-test = round(max(score, room_width - x));
+//test = round(max(score, room_width - x));
