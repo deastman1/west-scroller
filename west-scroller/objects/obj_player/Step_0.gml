@@ -38,3 +38,7 @@ var cam_x = round(x - view_w / 2);
 var cam_y = round(y - view_h / 2);
 
 camera_set_view_pos(view_camera[0], cam_x, cam_y);
+
+if (x > global.max_x) {
+    global.max_x = x;
+}

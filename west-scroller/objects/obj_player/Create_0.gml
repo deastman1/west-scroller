@@ -8,6 +8,7 @@ move_y = 0;
 lives = 3;
 global.ammo = 6
 global.dragging = 0
+global.max_x = x;
 
 // $$$$$$$$$$$$ STATE VARIABLES $$$$$$$$$$$$
 is_grounded = false;  //on ground?

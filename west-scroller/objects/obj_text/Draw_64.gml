@@ -1,2 +1,2 @@
 draw_set_font(Font1);
-draw_text(200, 200, "Score: " + string(global.ammo));
+draw_text(200, 200, "$$$: " + string(global.money));
