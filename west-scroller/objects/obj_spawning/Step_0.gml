@@ -1,7 +1,7 @@
 spawn_timer += 1;
 
 if (spawn_timer >= spawn_interval) {
-	if (random(8) < 0.2) {
+	if (random(10) < 0.5) {
 	    spawn_timer = 0;
 		if (global.max_x = obj_player.x) {
 		    var cam = view_camera[0];

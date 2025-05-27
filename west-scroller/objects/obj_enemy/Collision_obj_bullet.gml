@@ -5,7 +5,7 @@ if (dead = false) {
 
 if (hp = 0) {
 	dead = true;
-	if (sprite_index = spr_enemy1 || sprite_index = spr_enemy1_wait || sprite_index = spr_enemy1_shoot) {
+	if (sprite_index = spr_enemy1 || sprite_index = spr_enemy1_wait || sprite_index = spr_enemy1_shoot || sprite_index = spr_enemy1_walk) {
 		sprite_index = spr_enemy1_fall
 	}
 	else if (sprite_index = spr_enemy2) {
