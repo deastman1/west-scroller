@@ -11,8 +11,8 @@ if (hp = 0) {
 	else if (sprite_index = spr_enemy2 || sprite_index = spr_enemy2_wait || sprite_index = spr_enemy2_shoot || sprite_index = spr_enemy2_walk) {
 		sprite_index = spr_enemy2_fall
 	}
-	else if (sprite_index = spr_enemy3 || sprite_index = spr_enemy3_wait || sprite_index = spr_enemy3_shoot || sprite_index = spr_enemy3) {
-		sprite_index = spr_enemy2_fall
+	else if (sprite_index = spr_enemy3 || sprite_index = spr_enemy3_wait || sprite_index = spr_enemy3_shoot || sprite_index = spr_enemy3_walk) {
+		sprite_index = spr_enemy3_fall
 	}
 	image_index = 1;
 }

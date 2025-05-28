@@ -14,6 +14,14 @@ else if (sprite_index == spr_enemy2_walk) {
 		speed = -3;
 	}
 }
+else if (sprite_index == spr_enemy3_walk) {	
+	var dx = obj_player.x - x;
+	if (dx > 0) {
+		speed = 4;
+	} else {
+		speed = -4;
+	}
+}
 else {
 	speed = 0;
 }
