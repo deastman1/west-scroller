@@ -9,6 +9,8 @@ lives = 3;
 global.ammo = 6
 global.dragging = 0
 global.max_x = x;
+health = 100;
+max_health = 100;
 
 // $$$$$$$$$$$$ STATE VARIABLES $$$$$$$$$$$$
 is_grounded = false;  //on ground?
