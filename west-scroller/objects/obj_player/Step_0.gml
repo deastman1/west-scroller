@@ -1,10 +1,11 @@
 // $$$$$$$$$$$$$$ INPUT $$$$$$$$$$$$$$
 move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-if (! keyboard_check(ord("D")))
+if (! keyboard_check(ord("D"))) {
 	if (! keyboard_check(ord("A")))
 		sprite_index = spr_player
-move_x *= move_speed
-global.angle = point_direction(x, y, mouse_x, mouse_y)
+}
+move_x *= move_speed;
+global.angle = point_direction(x, y, mouse_x, mouse_y);
 var jump_pressed = keyboard_check_pressed(vk_space); //var makes it a local variable
 // $$$$$$$$$$$$$$ COLLISION CHECKS $$$$$$$$$$$$$$
 //check col with ground
