@@ -17,4 +17,3 @@ is_grounded = false;  //on ground?
 
 // %%%%%%%% OBJECT VARIABLES %%%%%%%%%%%
 ground_object = obj_ground; //replace with your ground object name
-window_set_fullscreen(true);

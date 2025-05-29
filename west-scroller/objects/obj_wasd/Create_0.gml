@@ -1,2 +1,3 @@
-size = 10;    
-alpha = 1;    
+fading = 0;
+image_alpha = 1;
+
