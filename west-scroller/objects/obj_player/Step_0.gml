@@ -6,15 +6,18 @@ if (! keyboard_check(ord("D"))) {
 }
 move_x *= move_speed;
 global.angle = point_direction(x, y, mouse_x, mouse_y);
-var jump_pressed = keyboard_check_pressed(vk_space); //var makes it a local variable
+jump_pressed = keyboard_check_pressed(vk_space);
+if (jump_pressed) {
+	sprite_index = spr_player_jump;
+}
 // $$$$$$$$$$$$$$ COLLISION CHECKS $$$$$$$$$$$$$$
 //check col with ground
-is_grounded = place_meeting(x, y+2, obj_ground);
+global.is_grounded = place_meeting(x, y+2, obj_ground);
 //check col with ladder
 
 // $$$$$$$$$$$ MOVEMENT $$$$$$$$$$$$$$
 //Gravity and jumping	
-if (is_grounded && jump_pressed) {
+if (global.is_grounded && jump_pressed) {
 	move_y = jump_speed;		
 	}
 	else if (move_y < max_fall_speed) {
@@ -23,6 +26,7 @@ if (is_grounded && jump_pressed) {
 
 // $$$$$$$$$$$$$$ MOVE THE PLAYER $$$$$$$$$$$$$$
 move_and_collide(move_x, move_y, ground_object);
+
 
 // $$$$$$$$$$$$$$ OUTSIDE ROOM $$$$$$$$$$$$$$
 if (x < -20 || x > room_width + 20 || y > room_height + 20 || y < -100) {

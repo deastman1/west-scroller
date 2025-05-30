@@ -1,0 +1,1 @@
+hp1 = max_health;

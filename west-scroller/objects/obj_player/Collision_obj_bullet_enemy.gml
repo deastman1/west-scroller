@@ -1,5 +1,5 @@
-health -= 5;
+hp1 -= 5;
 instance_destroy(other);
-if (health <= 0) {
+if (hp1 <= 0) {
 	instance_destroy(); 
 }
