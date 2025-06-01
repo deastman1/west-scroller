@@ -1,3 +1,3 @@
-if (distance_to_object(obj_player) < 150) {
+if (distance_to_object(obj_player) < 450) {
 	fading = 1;
 }

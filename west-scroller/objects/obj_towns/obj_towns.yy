@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_towns",
   "spriteId": {
-    "name": "spr_splashscreen",
-    "path": "sprites/spr_splashscreen/spr_splashscreen.yy",
+    "name": "spr_nothing",
+    "path": "sprites/spr_nothing/spr_nothing.yy",
   },
   "solid": false,
   "visible": false,

@@ -1,5 +1,5 @@
-hp1 -= 5;
-x -= 20;
+hp1 -= 10;
+instance_destroy(other);
 if (hp1 <= 0) {
 	instance_destroy(); 
 }

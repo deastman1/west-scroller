@@ -1,21 +1,22 @@
-if (obj_player.x > 1000) {
+if (obj_player.x > 3000) {
 	spawn_timer += 1;
 	change_x = 0;
 
 	if (spawn_timer >= spawn_interval) {
-		if (choose("1") < 1.5) {
+		if (random(5) < 0.5) {
 			if (global.max_x = obj_player.x) {
 			    var cam = view_camera[0];
 			    var right_edge_x = camera_get_view_x(cam) + camera_get_view_width(cam);
-			    var spawn_y = 100;
+			    var spawn_y = 357;
 				repeat (1) {
 				if (choose("1", "2") > 1.5) {
 					pick = obj_cactus
-				} else {
+				} else if (choose("1", "2", "3") > 1.5) {
 					pick = obj_bush
-				}
-				instance_create_layer(right_edge_x + change_x, spawn_y, "ground", pick);
-				change_x += 50;
+				} else {
+					pick = obj_grass
+				} 
+				instance_create_layer(right_edge_x, spawn_y, "nature", pick);
 				}
 			}
 		}

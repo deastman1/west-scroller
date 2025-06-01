@@ -1,6 +1,6 @@
 // %%%%%%%% MOVEMENT VARIABLES %%%%%%%%%%%
-move_speed = 3;
-jump_speed = -12;    //up speed
+move_speed = 8;
+jump_speed = -16;    //up speed
 gravity_force = 0.5;  //falling gravity
 max_fall_speed = 10;  //to avoid too fast
 move_x = 0;

@@ -1,4 +1,4 @@
-if (obj_player.x > 1000) {
+if (obj_player.x > 4000) {
 	spawn_timer += 1;
 	change_x = 0;
 

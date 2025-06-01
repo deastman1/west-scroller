@@ -17,11 +17,15 @@ global.is_grounded = place_meeting(x, y+2, obj_ground);
 
 // $$$$$$$$$$$ MOVEMENT $$$$$$$$$$$$$$
 //Gravity and jumping	
-if (global.is_grounded && jump_pressed) {
-	move_y = jump_speed;		
+if (global.is_grounded) {
+	move_y = 0;  // Get rid of gravity which presses object into the ground (too much friction which prevents horizontal movement)
+	if (jump_pressed) {
+			move_y = jump_speed;  // Jump
 	}
-	else if (move_y < max_fall_speed) {
-		move_y += gravity_force; // gravity pull
+}	
+// Falling
+	else if (!global.is_grounded && move_y < max_fall_speed) {  // Only allow gravity if not on the ground and if below max fall speed
+		move_y += gravity_force;
 	}
 
 // $$$$$$$$$$$$$$ MOVE THE PLAYER $$$$$$$$$$$$$$

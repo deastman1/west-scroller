@@ -100,6 +100,13 @@ if (sprite_index = spr_enemy3) {
 			change_y -= 10;
 			change_x += 40;
 			}
+			repeat (8) {
+				if (direction = 90) {
+					x -= 4
+				} else {
+					x += 4
+				}
+			}
 			change_y = 0;
 			change_x = 0;
 		}
@@ -120,6 +127,13 @@ if (sprite_index = spr_enemy3) {
 							change_y -= 10;
 							change_x += 40;
 						}
+							repeat (8) {
+								if (direction = 180) {
+									x -= 4
+								} else {
+									x += 4
+								}
+							}
 							change_y = 0;
 							change_x = 0;
 					} else {
