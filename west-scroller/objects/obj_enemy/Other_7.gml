@@ -13,6 +13,7 @@ if (sprite_index = spr_enemy1) {
 } else {
 	if (sprite_index = spr_enemy1_wait) {
 		reloaded = 1;
+		audio_play_sound(snd_reload, 1, 0)
 		if (distance_to_object(obj_player) > 650) {
 			sprite_index = spr_enemy1_walk;
 		} else {
@@ -20,6 +21,7 @@ if (sprite_index = spr_enemy1) {
 		if (distance_to_object(obj_player) < 720) {
 			instance_create_layer(x, y, "ground", obj_bullet_enemy);
 			obj_bullet_enemy.speed = 20;
+			audio_play_sound(snd_gun, 1, 0)
 		}
 	}
 	
@@ -33,6 +35,7 @@ if (sprite_index = spr_enemy1) {
 						instance_create_layer(x, y, "ground", obj_bullet_enemy);
 						obj_bullet_enemy.speed = 20;
 						sprite_index = spr_enemy1_shoot;
+						audio_play_sound(snd_gun, 1, 0)
 					} else {
 						sprite_index = spr_enemy1_wait;
 					}
@@ -46,6 +49,7 @@ if (sprite_index = spr_enemy2) {
 } else {
 	if (sprite_index = spr_enemy2_wait) {
 		reloaded = 1;
+		audio_play_sound(snd_reload, 1, 0)
 		if (distance_to_object(obj_player) > 650) {
 			sprite_index = spr_enemy2_walk;
 		} else {
@@ -57,6 +61,7 @@ if (sprite_index = spr_enemy2) {
 			change_x += 90;
 			}
 			change_x = 0;
+			audio_play_sound(snd_gun, 1, 0)
 		}
 	}
 	
@@ -72,6 +77,7 @@ if (sprite_index = spr_enemy2) {
 								instance_create_layer(x + change_x, y, "ground", obj_bullet_enemy);
 								obj_bullet_enemy.speed = 20;
 								change_x += 90;
+								audio_play_sound(snd_gun, 1, 0)
 							}
 								change_x = 0;
 					} else {
@@ -88,12 +94,13 @@ if (sprite_index = spr_enemy3) {
 } else {
 	if (sprite_index = spr_enemy3_wait) {
 		reloaded = 1;
+		audio_play_sound(snd_shotgunreload, 1, 0)
 		if (distance_to_object(obj_player) > 250) {
 			sprite_index = spr_enemy3_walk;
 		} else {
 		sprite_index = spr_enemy3_shoot;
 		if (distance_to_object(obj_player) < 320) {
-			repeat (4) {
+			repeat (3) {
 			instance_create_layer(x + change_x, y, "ground", obj_bullet_enemy);
 			obj_bullet_enemy.speed = 20;
 			obj_bullet_enemy.direction = point_direction(x, y + change_y, obj_player.x, obj_player.y) + 10;
@@ -109,6 +116,7 @@ if (sprite_index = spr_enemy3) {
 			}
 			change_y = 0;
 			change_x = 0;
+			audio_play_sound(snd_shotgun, 1, 0)
 		}
 	}
 	
@@ -120,7 +128,7 @@ if (sprite_index = spr_enemy3) {
 				if (distance_to_object(obj_player) < 250) {
 					if (reloaded = 1) {
 						sprite_index = spr_enemy3_shoot;
-						repeat (4) {
+						repeat (3) {
 							instance_create_layer(x + change_x, y, "ground", obj_bullet_enemy);
 							obj_bullet_enemy.speed = 20;
 							obj_bullet_enemy.direction = point_direction(x, y + change_y, obj_player.x, obj_player.y) + 10;
@@ -136,6 +144,7 @@ if (sprite_index = spr_enemy3) {
 							}
 							change_y = 0;
 							change_x = 0;
+							audio_play_sound(snd_shotgun, 1, 0)
 					} else {
 						sprite_index = spr_enemy3_wait;
 					}

@@ -9,6 +9,9 @@ global.angle = point_direction(x, y, mouse_x, mouse_y);
 jump_pressed = keyboard_check_pressed(vk_space);
 if (jump_pressed) {
 	sprite_index = spr_player_jump;
+	if (random(7) < 0.5) {
+		audio_play_sound(snd_horse, 1 ,0)
+	}
 }
 // $$$$$$$$$$$$$$ COLLISION CHECKS $$$$$$$$$$$$$$
 //check col with ground

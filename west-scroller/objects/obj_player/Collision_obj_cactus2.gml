@@ -1,5 +1,7 @@
 hp1 -= 10;
+audio_play_sound(snd_hit, 1 ,0)
 instance_destroy(other);
 if (hp1 <= 0) {
-	instance_destroy(); 
+	room = rm_darkness
+	global.score = global.money
 }
