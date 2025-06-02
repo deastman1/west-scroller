@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_bush",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_bush",
+    "path": "sprites/spr_bush/spr_bush.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
