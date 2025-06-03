@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_reset",
-  "spriteId": {
-    "name": "spr_reset",
-    "path": "sprites/spr_reset/spr_reset.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
